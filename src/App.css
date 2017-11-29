@@ -1,28 +1,32 @@
 .App {
   text-align: center;
+  font-family: 'Noto Serif', serif;
+  color:#010e60;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.github-repo-info {
+  border: 2px solid #ccc;
+  margin:20px 30px;
+  padding: 10px 15px;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+.search-box input{
+  width:175px;
+  text-align: center;
+  outline: none
 }
 
-.App-title {
-  font-size: 1.5em;
+.header{
+  margin-bottom: 15px;
+  font-size: 30px
 }
 
-.App-intro {
-  font-size: large;
+.sort-body{
+
+  margin-bottom: 20px 0px;
+  outline:none;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.sort{
+  outline:none
 }
