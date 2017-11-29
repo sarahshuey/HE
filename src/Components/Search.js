@@ -34,21 +34,3 @@ class Search extends Component {
 }
 
 export default Search
-// export class Sort extends Component{
-//   submitButton(event){
-//     let sort_option = event.target.value;
-//     console.log(sort_option);
-//     this.props.searchRepos(search_string, sort_option)
-//     //this.props.searchRepos(search_string);
-//   }
-//   render(){
-//     return(
-//       <div>
-//         <label>SCORE<input type="radio" name="sort" onClick={this.submitButton.bind(this)} ref="sortterm" value="score" checked="checked"/></label>
-//         <label>STARS<input type="radio" name="sort" onClick={this.submitButton.bind(this)} ref="sortterm" value="stars"/></label>
-//         <br/>
-//         <h2>Value : {sort_option} </h2>
-//       </div>
-//     )
-//   }
-// }

@@ -14,8 +14,8 @@ class Sort extends Component{
   render(){
     return(
       <div>
-        <label>SCORE<input type="radio" name="sort" onClick={this.submitButton.bind(this)} ref="sortterm" value="score"/></label>
-        <label>STARS<input type="radio" name="sort" onClick={this.submitButton.bind(this)} ref="sortterm" value="stars"/></label>
+        <label>SCORE<input type="radio" name="sort" onClick={this.submitButton.bind(this)}  value="score"/></label>
+        <label>STARS<input type="radio" name="sort" onClick={this.submitButton.bind(this)}  value="stars"/></label>
         <br/>
       </div>
     )
