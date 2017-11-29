@@ -19,7 +19,7 @@ class Github extends Component {
 
   getReposName(search_string){
     this.setState({search_name: search_string})
-    let finalURL = `${API}${search_string}${SORT_VAR}{this.state.sort_type}`;
+    let finalURL = `${API}${search_string}${SORT_VAR}${this.state.sort_type}`;
     fetch(finalURL)
     .then((res) => res.json() )
     .then((data) => {
@@ -31,8 +31,10 @@ class Github extends Component {
     .catch((error) => console.log('Unable to fetch data'))
   }
   getReposSort(sort_option){
+    this.setState({sort_type: sort_option})
     console.log(this.state.search_name);
-    let finalURL = `${API}${this.state.search_name}${SORT_VAR}${this.state.sort_type}`;
+
+    let finalURL = `${API}${this.state.search_name}${SORT_VAR}${sort_option}`;
   console.log(finalURL);
     fetch(finalURL)
     .then((res) => res.json() )
