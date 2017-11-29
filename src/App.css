@@ -1,17 +1,45 @@
 .App {
   text-align: center;
+  display: flex;
   font-family: 'Noto Serif', serif;
   color:#010e60;
 }
+.repos{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
+.search-sort{
+  justify-content: center;
+}
+.github-repo a{
+  text-decoration: none;
+  color:#010e60
+
+}
 .github-repo-info {
   border: 2px solid #ccc;
   margin:20px 30px;
   padding: 10px 15px;
+  width:350px;
+  height: 350px;
+  text-align: left;
+  overflow: scroll;
+  background-color: #eaeded;
+  text-decoration: none;
+}
+.github-repo-info:hover{
+  background-color: #010e60;
+  color:#eaeded;
 }
 
 .search-box input{
-  width:175px;
+  width:250px;
+  font-size: 30px;
+  font-weight: bolder;
+  height: 50px;
   text-align: center;
   outline: none
 }
@@ -21,10 +49,14 @@
   font-size: 30px
 }
 
-.sort-body{
-
-  margin-bottom: 20px 0px;
+.sort-buttons{
+  margin:20px 0;
   outline:none;
+  font-size: 20px
+}
+
+.score{
+  margin-right: 20px;
 }
 
 .sort{

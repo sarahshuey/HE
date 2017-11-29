@@ -1,8 +1,5 @@
 import React, { Component } from 'react';
-import { RadioGroup, RadioButton } from 'react-radio-buttons';
 
-let search_string = "";
-let sort_option = "score";
 
 class Sort extends Component{
   submitButton(event){
@@ -13,9 +10,9 @@ class Sort extends Component{
   }
   render(){
     return(
-      <div>
-        <label>SCORE<input type="radio" name="sort" onClick={this.submitButton.bind(this)}  value="score"/></label>
-        <label>STARS<input type="radio" name="sort" onClick={this.submitButton.bind(this)}  value="stars"/></label>
+      <div className="sort-buttons">
+        <label>SCORE<input type="radio" name="sort" className="score" onClick={this.submitButton.bind(this)}  value="score"/></label>
+        <label>STARS<input type="radio" name="sort" className="stars" onClick={this.submitButton.bind(this)}  value="stars"/></label>
         <br/>
       </div>
     )

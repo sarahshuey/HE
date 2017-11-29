@@ -19,6 +19,7 @@ class Repos extends Component {
     else {
       return(
         <div className="github-repo">
+        <a target ="_blank" href={userdata.html_url}>
           <div className="github-repo-info">
             <h3>{`Username: ${userdata.owner.login}`}</h3>
             <h3>{`Repo Name: ${userdata.name}`}</h3>
@@ -27,6 +28,7 @@ class Repos extends Component {
             <h3>{`Language: ${userdata.language}`}</h3>
             <h3>{`Description: ${userdata.description}`}</h3>
           </div>
+          </a>
         </div>
       );
     }

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Profile from './Repos';
+import Repos from './Repos';
 import Search from './Search';
 import Sort from './Sort';
 
@@ -48,9 +48,9 @@ class Github extends Component {
   }
   renderRepos() {
     return this.state.repos.map(repo =>
-      <section id="card">
-        <Profile userData={repo}/>
-      </section>
+      <div id="card">
+        <Repos userData={repo}/>
+      </div>
     );
   }
 
@@ -60,11 +60,14 @@ class Github extends Component {
 
   render(){
     return(
-      <div>
+      <div className="all">
+      <div className="search-sort">
       <Search searchRepos={this.getReposName.bind(this)}  />
       <Sort sortRepos={this.getReposSort.bind(this)}/>
+      </div>
+      <div className="repos">
         {this.renderRepos()}
-
+        </div>
       </div>
     );
   }
