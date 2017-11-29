@@ -15,7 +15,7 @@ class Search extends Component {
     return(
       <div className="search-body">
       <div className="header">
-      Github Repo Search
+      GitHub Repo Search
       </div>
       <div className="search-box">
         <form onSubmit={this.submitForm.bind(this)}>
